@@ -1,0 +1,25 @@
+{
+    "name": "ekandreas/docker-bedrock",
+    "version": "0.9",
+    "description": "Docker environment for Roots Bedrock projects",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas Ek",
+            "email": "andreas@aekab.se"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "~2"
+    },
+    "autoload": {
+        "psr-4": {
+            "EkAndreas\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "EkAndreas\\DockerBedrock\\Installer::postAutoloadDump"
+        ]
+    }
+}
