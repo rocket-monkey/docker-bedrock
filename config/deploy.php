@@ -7,7 +7,7 @@ require_once 'vendor/ekandreas/docker-bedrock/recipe.php';
 
 env('container', 'container_name_prefix');
 
-server('development', 'the_project.dev', 2222)
+server('development', 'wp-rocket.dev', 2222)
     ->env('deploy_path', '/var/www/html')
     ->env('branch', 'master')
     ->stage('development')
