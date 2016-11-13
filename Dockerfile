@@ -12,4 +12,4 @@ RUN docker-php-ext-enable xdebug
 
 ADD config/docker.conf /etc/apache2/sites-enabled/
 
-ADD config/php.ini /usr/local/etc/php/
+ADD config/php.ini /usr/local/etc/php/7.0
